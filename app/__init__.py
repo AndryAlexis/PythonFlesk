@@ -9,5 +9,5 @@ def create_app():
     app.register_blueprint(home_blueprint)
     app.register_blueprint(about_blueprint)
     app.register_blueprint(not_found_blueprint)
-    
+
     return app

@@ -5,6 +5,8 @@
 {% endblock %}
 
 {% block body %}
-    {% include "./components/header.html" %}
+    <div class="d-flex w-100 vh-100">    
+        {% include "./components/asidebar.html" %}
+        {% include "./components/header.html" %}
+    </div>
 {% endblock %}
-
