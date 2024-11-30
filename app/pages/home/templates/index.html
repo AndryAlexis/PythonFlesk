@@ -5,8 +5,13 @@
 {% endblock %}
 
 {% block body %}
-    <div class="d-flex w-100 vh-100">    
+    <div class="d-flex w-100 h-100">    
         {% include "./components/asidebar.html" %}
-        {% include "./components/header.html" %}
+        <div class="d-flex flex-column w-100">
+            {% include "./components/header.html" %}
+            <div class="w-100 h-100 p-3 overflow-y-auto"> 
+                <h1>Home</h1>
+            </div>
+        </div>
     </div>
 {% endblock %}

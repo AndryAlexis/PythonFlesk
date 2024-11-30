@@ -1,13 +1,20 @@
+<!-- Main header container with full width -->
 <header class="w-100">
-    <nav class="navbar navbar-expand navbar-light bg-ligh p-0">
+    <!-- Navigation bar with dark theme -->
+    <nav class="navbar navbar-expand navbar-dark bg-dark p-0">
+        <!-- Container for navbar content, aligned to the right -->
         <div class="container-fluid justify-content-end p-3">
+            <!-- Navigation items container -->
             <div class="justify-content-end" id="navbarSupportedContent">
+                <!-- Navigation links list -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Home link - currently active -->
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
+                    <!-- About Us link -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="{{ url_for('about.page') }}">About Us</a>
                     </li>
                 </ul>
             </div>
